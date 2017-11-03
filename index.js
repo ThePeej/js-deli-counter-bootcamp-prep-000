@@ -6,6 +6,14 @@ function takeANumber(katzDeliLine, name) {
   return `Welcome, ${name}. You are number ${n} in line.`
 }
 
+function nowServing() {
+  if (katzDeli.length = 0) {
+    return "There is nobody waiting to be served!"
+  } else {
+    
+  }
+}
+
 function currentLine(line) {
   var n = line.length
   if (n === 0) {
