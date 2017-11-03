@@ -11,7 +11,7 @@ function currentLine(line) {
   } else {
     var position = 1
     while (n > 0) {
-      line[n] = position + ". " + line[n]
+      line[n-1] = position + ". " + line[n-1]
       n--
     }
   return 'The line is currently: ' + line
