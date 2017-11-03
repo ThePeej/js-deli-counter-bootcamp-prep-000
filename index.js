@@ -9,11 +9,9 @@ function currentLine(line) {
   if (n === 0) {
     return "The line is currently empty."
   } else {
-    var position = 1
     while (n > 0) {
-      line[n-1] = position + ". " + line[n-1]
+      line[n-1] = n + ". " + line[n-1]
       n--
-      position++
     }
   return 'The line is currently: ' + line
   }
