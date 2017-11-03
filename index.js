@@ -4,12 +4,12 @@ function takeANumber(katzDeliLine, name) {
   return `Welcome, ${name}. You are number ${n} in line.`
 }
 
-function nowServing() {
-  if (katzDeli.length === 0) {
+function nowServing(line) {
+  if (line.length === 0) {
     return "There is nobody waiting to be served!"
   } else {
-    katzDeli.shift()
-    return 'Currently serving ' + katzDeli[0] + '.'
+    line.shift()
+    return 'Currently serving ' + line[0] + '.'
   }
 }
 
