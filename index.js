@@ -13,6 +13,7 @@ function currentLine(line) {
     while (n > 0) {
       line[n-1] = position + ". " + line[n-1]
       n--
+      position++
     }
   return 'The line is currently: ' + line
   }
