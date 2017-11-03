@@ -13,9 +13,9 @@ function currentline(katzDeliLine) {
     var position = 1
     while (n > 0) {
       linenow[n] = position + ". " + linenow[n]
-      n--  
+      n--
     }
-  return linenow
+  return 'The line is currently: ' + linenow
   }
-  
+
 }
