@@ -10,9 +10,9 @@ function currentLine(line) {
     return "The line is currently empty."
   } else {
     while (n > 0) {
-      line[n-1] = n + ". " + line[n-1]
+      line[n-1] = " " + n + ". " + line[n-1]
       n--
     }
-  return 'The line is currently: ' + line
+  return 'The line is currently:' + line
   }
 }
