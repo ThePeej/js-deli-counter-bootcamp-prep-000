@@ -4,18 +4,16 @@ function takeANumber(katzDeliLine, name) {
   katzDeliLine.push(katzDeliLine.length+1 + ". " + name)
 }
 
-function currentline(katzDeliLine) {
-  var linenow = katzDeliLine
-  var n = linenow.length
+function currentLine(line) {
+  var n = line.length
   if (n === 0) {
     return "The line is currently empty."
   } else {
     var position = 1
     while (n > 0) {
-      linenow[n] = position + ". " + linenow[n]
+      line[n] = position + ". " + line[n]
       n--
     }
-  return 'The line is currently: ' + linenow
+  return 'The line is currently: ' + line
   }
-
 }
